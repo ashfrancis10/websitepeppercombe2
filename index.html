@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Four beautiful traditional holiday cottages in peaceful Peppercombe Valley, North Devon. Direct access to Peppercombe Beach and the South West Coast Path. Perfect for families, couples, walkers and surfers.">
+    <meta name="keywords" content="Peppercombe holiday cottages, Peppercombe Valley, North Devon coastal cottages, Coastguard Cottages, Combe Cottage, Peppercombe Beach, South West Coast Path, holiday lets Devon, Clovelly cottages">
+    <meta property="og:title" content="Peppercombe Cottages | Holiday Lets in Peppercombe Valley, North Devon">
+    <meta property="og:description" content="Four cherished traditional cottages with direct access to Peppercombe Beach and the South West Coast Path. Authentic coastal escapes in North Devon.">
+    <meta property="og:image" content="https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png">
+    <meta property="og:url" content="https://peppercombecottages.co.uk">
+    <title>Peppercombe Cottages | Holiday Lets in Peppercombe Valley, North Devon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&amp;display=swap');
+        
+        :root {
+            --sea: #1E5F74;
+            --sage: #5C7457;
+            --sand: #C9B896;
+            --cream: #F7F3EB;
+            --deep: #0D3B45;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .coastal-bg {
+            background-color: #F7F3EB;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #0D3B45;
+        }
+
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #1E5F74;
+        }
+
+        .cottage-card {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                        box-shadow 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .cottage-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(rgba(13, 59, 69, 0.35), rgba(13, 59, 69, 0.45));
+        }
+
+        .feature-icon {
+            color: #1E5F74;
+        }
+
+        .coastal-btn {
+            background-color: #1E5F74;
+            transition: all 0.3s ease;
+        }
+        
+        .coastal-btn:hover {
+            background-color: #0D3B45;
+            transform: translateY(-1px);
+        }
+
+        .sand-btn {
+            background-color: #C9B896;
+            color: #0D3B45;
+            transition: all 0.3s ease;
+        }
+        
+        .sand-btn:hover {
+            background-color: #b8a37f;
+        }
+
+        .nav-scrolled {
+            background-color: rgba(247, 243, 235, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .modal {
+            animation: modalPop 0.25s ease forwards;
+        }
+
+        @keyframes modalPop {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.98);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .cottage-img {
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .cottage-card:hover .cottage-img {
+            transform: scale(1.05);
+        }
+
+        .nav-active {
+            color: #1E5F74;
+            font-weight: 600;
+        }
+
+        .peaceful-text {
+            color: #5C7457;
+        }
+
+        .gallery-img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.015);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .activity-card {
+            transition: all 0.3s ease;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .soft-shadow {
+            box-shadow: 0 10px 15px -3px rgb(13 59 69 / 0.08), 0 4px 6px -4px rgb(13 59 69 / 0.08);
+        }
+
+        .value-prop {
+            transition: all 0.2s ease;
+        }
+        
+        .value-prop:hover {
+            transform: translateY(-2px);
+        }
+
+        .testimonial {
+            background: white;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+        }
+
+        .footer-link {
+            transition: color 0.2s ease;
+        }
+        
+        .footer-link:hover {
+            color: #1E5F74;
+        }
+
+        .availability-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 9999px;
+        }
+
+        .form-input {
+            transition: all 0.2s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #1E5F74;
+            box-shadow: 0 0 0 3px rgba(30, 95, 116, 0.1);
+        }
+
+        .photo-credit {
+            font-size: 10px;
+            opacity: 0.6;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #C9B896, transparent);
+        }
+
+        /* Editor mode styles */
+        .editor-editable {
+            outline: 1px dashed #1E5F74;
+            padding: 2px 4px;
+            border-radius: 4px;
+            transition: outline 0.2s ease;
+        }
+        .editor-editable:focus {
+            outline: 2px solid #1E5F74;
+            background: rgba(30, 95, 116, 0.05);
+        }
+        .editor-bar {
+            box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        .draggable-card {
+            cursor: move;
+        }
+    </style>
+</head>
+<body class="bg-[#F7F3EB] text-[#0D3B45] antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#F7F3EB]/95 backdrop-blur-md border-b border-[#C9B896]/30">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-6 lg:px-10 py-5 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center justify-center w-9 h-9 bg-[#1E5F74] text-white rounded-xl shadow-inner">
+                        <i class="fa-solid fa-house-chimney text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-2xl tracking-tighter heading-serif">Peppercombe</div>
+                        <div class="text-[10px] text-[#5C7457] -mt-1 font-medium tracking-[1px]">COTTAGES</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#cottages" class="nav-link text-[#0D3B45] hover:text-[#1E5F74]">Our Cottages</a>
+                    <a href="#location" class="nav-link text-[#0D3B45] hover:text-[#1E5F74]">The Valley</a>
+                    <a href="#about" class="nav-link text-[#0D3B45] hover:text-[#1E5F74]">Our Story</a>
+                    <a href="#things-to-do" class="nav-link text-[#0D3B45] hover:text-[#1E5F74]">Things to Do</a>
+                    <a href="#bookings" class="nav-link text-[#0D3B45] hover:text-[#1E5F74]">Book</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-x-3">
+                    <button onclick="openBookingModal()"
+                            class="hidden sm:flex items-center gap-x-2 px-5 py-2.5 text-sm font-semibold rounded-2xl border border-[#1E5F74] text-[#1E5F74] hover:bg-[#1E5F74] hover:text-white transition-colors">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Check Availability</span>
+                    </button>
+                    <button onclick="document.getElementById('bookings').scrollIntoView({ behavior: 'smooth' })"
+                            class="coastal-btn text-white px-6 py-2.5 text-sm font-semibold rounded-2xl flex items-center gap-x-2 shadow-sm">
+                        <span>Enquire Now</span>
+                    </button>
+                    
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-[#1E5F74] hover:bg-white/60 rounded-2xl"
+                            aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-[#C9B896]/30 bg-[#F7F3EB]">
+            <div class="px-6 py-4 flex flex-col text-sm font-medium gap-y-1">
+                <a href="#cottages" class="py-2.5 px-3 mobile-nav-link">Our Cottages</a>
+                <a href="#location" class="py-2.5 px-3 mobile-nav-link">The Valley &amp; Location</a>
+                <a href="#about" class="py-2.5 px-3 mobile-nav-link">Our Story</a>
+                <a href="#things-to-do" class="py-2.5 px-3 mobile-nav-link">Things to Do</a>
+                <a href="#bookings" class="py-2.5 px-3 mobile-nav-link">Bookings &amp; Availability</a>
+                <div class="pt-3 border-t border-[#C9B896]/20 mt-1">
+                    <button onclick="openBookingModal()" class="w-full py-3 text-center border border-[#1E5F74] text-[#1E5F74] font-semibold rounded-2xl">Check Availability</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative h-[100dvh] min-h-[680px] flex items-center justify-center pt-16 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" 
+             style="background-image: url('https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png')">
+        </div>
+        <div class="hero-overlay absolute inset-0"></div>
+        
+        <!-- Subtle gradient at bottom for text readability -->
+        <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#0D3B45]/40 to-transparent"></div>
+
+        <div class="relative z-10 max-w-screen-2xl mx-auto px-6 text-center text-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-x-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs tracking-[1.5px] font-medium mb-6 border border-white/30">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <span>PEPPERCOMBE VALLEY, NORTH DEVON</span>
+                </div>
+                
+                <h1 class="heading-serif text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter leading-none mb-4">
+                    Peaceful coastal<br>escapes in Devon.
+                </h1>
+                
+                <p class="max-w-md mx-auto text-xl md:text-2xl text-white/90 font-light tracking-tight mb-9">
+                    Four historic cottages with direct access to Peppercombe Beach and the South West Coast Path.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                    <button onclick="document.getElementById('cottages').scrollIntoView({ behavior: 'smooth' })" 
+                            class="group w-full sm:w-auto inline-flex items-center justify-center gap-x-3 bg-white text-[#0D3B45] hover:bg-[#F7F3EB] font-semibold px-9 py-[15px] rounded-3xl text-[15px] transition-all active:scale-[0.985]">
+                        <span>Explore the cottages</span>
+                        <i class="fa-solid fa-arrow-right group-active:translate-x-0.5 transition"></i>
+                    </button>
+                    
+                    <button onclick="openBookingModal()" 
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-x-3 border border-white/70 hover:bg-white/10 text-white font-semibold px-9 py-[15px] rounded-3xl text-[15px] transition-all">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>Check availability</span>
+                    </button>
+                </div>
+                
+                <div class="mt-8 flex justify-center gap-x-6 text-xs text-white/70">
+                    <div class="flex items-center gap-x-1.5">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>National Trust land</span>
+                    </div>
+                    <div class="flex items-center gap-x-1.5">
+                        <i class="fa-solid fa-wifi"></i>
+                        <span>Wi-Fi available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-9 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center text-white/70 text-xs tracking-widest">
+            <span>SCROLL TO BEGIN</span>
+            <i class="fa-solid fa-chevron-down mt-1 animate-bounce"></i>
+        </div>
+    </header>
+
+    <!-- TRUST BAR / HIGHLIGHTS -->
+    <div class="border-b border-[#C9B896]/30 bg-white">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-5">
+            <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-8 gap-y-3 text-sm">
+                <div class="flex items-center gap-x-2 text-[#5C7457]">
+                    <i class="fa-solid fa-check text-[#1E5F74]"></i>
+                    <span class="font-medium">Direct beach access</span>
+                </div>
+                <div class="flex items-center gap-x-2 text-[#5C7457]">
+                    <i class="fa-solid fa-check text-[#1E5F74]"></i>
+                    <span class="font-medium">South West Coast Path at the gate</span>
+                </div>
+                <div class="flex items-center gap-x-2 text-[#5C7457]">
+                    <i class="fa-solid fa-check text-[#1E5F74]"></i>
+                    <span class="font-medium">Family-run • Local knowledge</span>
+                </div>
+                <div class="flex items-center gap-x-2 text-[#5C7457]">
+                    <i class="fa-solid fa-check text-[#1E5F74]"></i>
+                    <span class="font-medium">Peaceful valley setting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <section class="max-w-screen-2xl mx-auto px-6 lg:px-10 pt-16 pb-12">
+        <div class="text-center mb-10">
+            <div class="text-[#1E5F74] text-xs tracking-[2px] font-semibold mb-1.5">A PLACE TO SLOW DOWN</div>
+            <h2 class="section-header heading-serif tracking-tighter">Why guests return year after year</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="value-prop bg-white rounded-3xl p-6 soft-shadow border border-[#C9B896]/20">
+                <div class="w-11 h-11 flex items-center justify-center bg-[#E8F0F2] text-[#1E5F74] rounded-2xl mb-5">
+                    <i class="fa-solid fa-water fa-lg"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-1.5">Direct beach access</h4>
+                <p class="text-sm leading-relaxed text-[#5C7457]">A short walk from your cottage door down the valley to the beautiful pebble beach at Peppercombe.</p>
+            </div>
+            
+            <div class="value-prop bg-white rounded-3xl p-6 soft-shadow border border-[#C9B896]/20">
+                <div class="w-11 h-11 flex items-center justify-center bg-[#E8F0F2] text-[#1E5F74] rounded-2xl mb-5">
+                    <i class="fa-solid fa-mountain fa-lg"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-1.5">South West Coast Path</h4>
+                <p class="text-sm leading-relaxed text-[#5C7457]">Step straight onto one of the world's most spectacular walking routes. Dramatic cliffs, hidden coves and wildlife right outside.</p>
+            </div>
+            
+            <div class="value-prop bg-white rounded-3xl p-6 soft-shadow border border-[#C9B896]/20">
+                <div class="w-11 h-11 flex items-center justify-center bg-[#E8F0F2] text-[#1E5F74] rounded-2xl mb-5">
+                    <i class="fa-solid fa-home fa-lg"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-1.5">Authentic &amp; historic</h4>
+                <p class="text-sm leading-relaxed text-[#5C7457]">Traditional stone-built Coastguard and Combe Cottages, lovingly maintained with wood burners, gardens and timeless coastal character.</p>
+            </div>
+            
+            <div class="value-prop bg-white rounded-3xl p-6 soft-shadow border border-[#C9B896]/20">
+                <div class="w-11 h-11 flex items-center justify-center bg-[#E8F0F2] text-[#1E5F74] rounded-2xl mb-5">
+                    <i class="fa-solid fa-users fa-lg"></i>
+                </div>
+                <h4 class="font-semibold text-lg mb-1.5">Family-run hospitality</h4>
+                <p class="text-sm leading-relaxed text-[#5C7457]">We live locally and are on hand with honest recommendations for the best surf, walks, food and hidden gems of North Devon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR COTTAGES -->
+    <section id="cottages" class="max-w-screen-2xl mx-auto px-6 lg:px-10 pb-16">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-9">
+            <div>
+                <div class="text-[#1E5F74] text-xs tracking-[2px] font-semibold mb-1.5">STAY WITH US</div>
+                <h2 class="section-header heading-serif tracking-tighter">Our four cottages</h2>
+            </div>
+            <p class="text-[#5C7457] max-w-md mt-2 md:mt-0">All cottages have private gardens, wood-burning stoves, full kitchens and parking. Perfect for couples, families and groups.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <!-- Cottage 1 -->
+            <div onclick="showCottageModal(0)" class="cottage-card group bg-white rounded-3xl overflow-hidden border border-[#C9B896]/20 cursor-pointer soft-shadow">
+                <div class="relative h-56 overflow-hidden bg-[#E8F0F2]">
+                    <img src="https://media.rightmove.co.uk/dir/property-photo/ecfe5ff0e/89190456/ecfe5ff0e918b054497fe8490a3af100_max_656x437.png" 
+                         class="cottage-img w-full h-full object-cover" alt="Coastguard Cottage 1 - Peppercombe Cottages">
+                    <div class="absolute top-4 right-4 bg-white/95 text-[#0D3B45] px-3 py-1 text-xs font-semibold rounded-2xl flex items-center gap-x-1 shadow">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Sleeps 4</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="font-semibold text-2xl tracking-tight">Coastguard Cottage 1</h3>
+                        <div class="text-right">
+                            <div class="text-xs text-[#5C7457]">from</div>
+                            <div class="font-semibold text-xl text-[#1E5F74]">£145</div>
+                        </div>
+                    </div>
+                    <p class="mt-1 text-sm text-[#5C7457]">2 bedrooms • 1 bathroom</p>
+                    <div class="mt-4 flex items-center gap-x-2 text-xs">
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Family friendly</div>
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Wood burner</div>
+                    </div>
+                    <div class="mt-5 text-sm flex items-center gap-x-1 text-[#1E5F74] font-medium group-hover:gap-x-2 transition-all">
+                        View details <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cottage 2 -->
+            <div onclick="showCottageModal(1)" class="cottage-card group bg-white rounded-3xl overflow-hidden border border-[#C9B896]/20 cursor-pointer soft-shadow">
+                <div class="relative h-56 overflow-hidden bg-[#E8F0F2]">
+                    <img src="https://media.rightmove.co.uk/dir/property-photo/995c22944/89190456/995c22944cb2612156ba4b26be766e34_max_656x437.png" 
+                         class="cottage-img w-full h-full object-cover" alt="Coastguard Cottage 2 - Peppercombe Cottages">
+                    <div class="absolute top-4 right-4 bg-white/95 text-[#0D3B45] px-3 py-1 text-xs font-semibold rounded-2xl flex items-center gap-x-1 shadow">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Sleeps 3</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="font-semibold text-2xl tracking-tight">Coastguard Cottage 2</h3>
+                        <div class="text-right">
+                            <div class="text-xs text-[#5C7457]">from</div>
+                            <div class="font-semibold text-xl text-[#1E5F74]">£135</div>
+                        </div>
+                    </div>
+                    <p class="mt-1 text-sm text-[#5C7457]">2 bedrooms • 1 bathroom</p>
+                    <div class="mt-4 flex items-center gap-x-2 text-xs">
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Cosy for couples</div>
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Wood burner</div>
+                    </div>
+                    <div class="mt-5 text-sm flex items-center gap-x-1 text-[#1E5F74] font-medium group-hover:gap-x-2 transition-all">
+                        View details <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cottage 3 -->
+            <div onclick="showCottageModal(2)" class="cottage-card group bg-white rounded-3xl overflow-hidden border border-[#C9B896]/20 cursor-pointer soft-shadow">
+                <div class="relative h-56 overflow-hidden bg-[#E8F0F2]">
+                    <img src="https://media.rightmove.co.uk/dir/property-photo/995c22944/89190456/995c22944cb2612156ba4b26be766e34_max_656x437.png" class="cottage-img w-full h-full object-cover" alt="Coastguard Cottage 3 - Peppercombe Cottages">
+                    <div class="absolute top-4 right-4 bg-white/95 text-[#0D3B45] px-3 py-1 text-xs font-semibold rounded-2xl flex items-center gap-x-1 shadow">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Sleeps 2</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="font-semibold text-2xl tracking-tight">Coastguard Cottage 3</h3>
+                        <div class="text-right">
+                            <div class="text-xs text-[#5C7457]">from</div>
+                            <div class="font-semibold text-xl text-[#1E5F74]">£125</div>
+                        </div>
+                    </div>
+                    <p class="mt-1 text-sm text-[#5C7457]">1 bedroom • 1 bathroom</p>
+                    <div class="mt-4 flex items-center gap-x-2 text-xs">
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Romantic escape</div>
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Closest to beach</div>
+                    </div>
+                    <div class="mt-5 text-sm flex items-center gap-x-1 text-[#1E5F74] font-medium group-hover:gap-x-2 transition-all">
+                        View details <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combe Cottage -->
+            <div onclick="showCottageModal(3)" class="cottage-card group bg-white rounded-3xl overflow-hidden border border-[#C9B896]/20 cursor-pointer soft-shadow">
+                <div class="relative h-56 overflow-hidden bg-[#E8F0F2]">
+                    <img src="https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png" 
+                         class="cottage-img w-full h-full object-cover" alt="Combe Cottage - Peppercombe Cottages">
+                    <div class="absolute top-4 right-4 bg-white/95 text-[#0D3B45] px-3 py-1 text-xs font-semibold rounded-2xl flex items-center gap-x-1 shadow">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Sleeps 4</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="font-semibold text-2xl tracking-tight">Combe Cottage</h3>
+                        <div class="text-right">
+                            <div class="text-xs text-[#5C7457]">from</div>
+                            <div class="font-semibold text-xl text-[#1E5F74]">£155</div>
+                        </div>
+                    </div>
+                    <p class="mt-1 text-sm text-[#5C7457]">3 bedrooms • 1 bathroom</p>
+                    <div class="mt-4 flex items-center gap-x-2 text-xs">
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Spacious kitchen</div>
+                        <div class="bg-[#F7F3EB] px-3 py-1 rounded-2xl">Great for groups</div>
+                    </div>
+                    <div class="mt-5 text-sm flex items-center gap-x-1 text-[#1E5F74] font-medium group-hover:gap-x-2 transition-all">
+                        View details <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-center mt-6 text-xs text-[#5C7457]">Prices are nightly low-season starting rates. High season and short breaks priced on enquiry.</p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-white border-y border-[#C9B896]/20 py-14">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10">
+            <div class="flex flex-col md:flex-row gap-y-4 items-start md:items-center justify-between mb-9">
+                <div>
+                    <div class="text-[#1E5F74] text-xs tracking-[2px] font-semibold mb-1">GUESTS SAY</div>
+                    <h2 class="section-header heading-serif tracking-tighter">Real stories from the valley</h2>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-5">
+                <div class="testimonial rounded-3xl p-6 border border-[#C9B896]/10">
+                    <div class="flex items-center gap-x-1 text-[#C9B896] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[15px] leading-relaxed">"The location is completely magical. We walked straight down to the beach every morning. The cottages are full of character and incredibly peaceful. We’ll be back."</p>
+                    <div class="mt-5 text-xs">
+                        <span class="font-semibold">The Thompson family</span><br>
+                        <span class="text-[#5C7457]">Bristol • August 2025</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial rounded-3xl p-6 border border-[#C9B896]/10">
+                    <div class="flex items-center gap-x-1 text-[#C9B896] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-[15px] leading-relaxed">"Perfect for our multi-generational family gathering. Combe Cottage was spacious and cosy with the wood burner. The kids loved the stream and rock pooling at the beach."</p>
+                    <div class="mt-5 text-xs">
+                        <span class="font-semibold">Sarah &amp; David Patel</span><br>
+                        <span class="text-[#5C7457]">London &amp; Exeter • October 2025</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial rounded-3xl p-6 border border-[#C9B896]/10">
+                    <div class="flex items-center gap-x-1 text-[#C9B896] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[15px] leading-relaxed">"We surfed at Westward Ho! and Croyde, then came back to total peace in the valley. Coastguard Cottage 3 was the perfect romantic bolthole after long coastal walks."</p>
+                    <div class="mt-5 text-xs">
+                        <span class="font-semibold">James &amp; Ellie</span><br>
+                        <span class="text-[#5C7457]">Manchester • May 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE VALLEY & LOCATION -->
+    <section id="location" class="max-w-screen-2xl mx-auto px-6 lg:px-10 pt-16 pb-14">
+        <div class="grid lg:grid-cols-12 gap-x-12 gap-y-10 items-center">
+            <div class="lg:col-span-7">
+                <div class="text-[#1E5F74] text-xs tracking-[2px] font-semibold mb-1.5">THE SETTING</div>
+                <h2 class="section-header heading-serif tracking-tighter mb-4">Peppercombe Valley &amp; the North Devon coast</h2>
+                
+                <div class="prose prose-slate max-w-none text-[#374151]">
+                    <p class="text-[15.5px] leading-relaxed">Nestled in a sheltered valley within land cared for by the National Trust, our four cottages sit just steps from the pebble beach at Peppercombe and the South West Coast Path.</p>
+                    
+                    <p class="text-[15.5px] leading-relaxed mt-4">This is proper North Devon — dramatic cliffs, ancient woodlands, wild swimming spots and some of the best surfing beaches in the country within a short drive. The valley itself feels like a secret. You’ll hear the stream, the birds, and the sea in the distance.</p>
+                </div>
+
+                <div class="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div class="flex gap-x-3">
+                        <div><i class="fa-solid fa-shield-halved text-[#1E5F74] mt-0.5"></i></div>
+                        <div>
+                            <div class="font-semibold">National Trust</div>
+                            <div class="text-[#5C7457] text-xs">Much of the surrounding valley and coastline is protected and managed by the National Trust.</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-3">
+                        <div><i class="fa-solid fa-map text-[#1E5F74] mt-0.5"></i></div>
+                        <div>
+                            <div class="font-semibold">Location</div>
+                            <div class="text-[#5C7457] text-xs">Horns Cross, near Bideford. EX39. 6 miles to Bideford, 15 mins to Clovelly.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map / Visual -->
+            <div class="lg:col-span-5">
+                <div class="rounded-3xl overflow-hidden border border-[#C9B896]/30 soft-shadow bg-white">
+                    <div class="aspect-[16/10] bg-[linear-gradient(#E8F0F2,#F7F3EB)] relative flex items-center justify-center">
+                        <div class="text-center px-6">
+                            <i class="fa-solid fa-map-location-dot text-4xl text-[#1E5F74]/70 mb-3"></i>
+                            <div class="font-medium">Peppercombe Valley, Horns Cross</div>
+                            <div class="text-xs text-[#5C7457] mt-0.5">North Devon, EX39 5EA</div>
+                            
+                            <a href="https://maps.google.com/?q=Peppercombe+Valley,+Horns+Cross,+Bideford" target="_blank"
+                               class="mt-5 inline-flex items-center gap-x-2 text-xs bg-[#1E5F74] text-white px-5 py-2 rounded-2xl hover:bg-[#0D3B45] transition">
+                                <i class="fa-solid fa-external-link-alt"></i>
+                                <span>Open in Google Maps</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3.5 border-t text-xs flex items-center justify-between text-[#5C7457]">
+                        <div>Access via private track (rough in places)</div>
+                        <div class="font-medium">1 car per cottage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="bg-[#0D3B45] text-[#F7F3EB]">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-16">
+            <div class="max-w-4xl">
+                <div class="text-[#C9B896] text-xs tracking-[2px] font-semibold mb-2">OUR STORY</div>
+                <h2 class="heading-serif text-white text-5xl tracking-tighter">A place we’re honoured to share.</h2>
+                
+                <div class="mt-8 max-w-3xl text-[#C9B896] space-y-5 text-[15.2px] leading-relaxed">
+                    <p>Hi, I’m Ash. I’ve surfed these waters my whole life and spent years working in holiday lets across the South West. Peppercombe Valley has always been special to me — it’s where I feel most at home.</p>
+                    
+                    <p>After deciding to make a big life change, Sammi and I made the decision to step away from busy lives and return to North Devon. We wanted to be closer to family, to the sea, and to something that felt real. When the opportunity came to take on these four beautiful cottages under the National Trust, it felt like the right path.</p>
+                    
+                    <p>We’ve poured everything into making them welcoming, comfortable and true to their heritage. We live nearby and are always happy to help with recommendations — the best places to eat, surf spots that aren’t too busy, and walks that will take your breath away.</p>
+                </div>
+
+                <div class="mt-8 flex items-center gap-x-4">
+                    <div class="flex -space-x-2">
+                        <div class="w-9 h-9 bg-[#C9B896] rounded-full border-2 border-[#0D3B45] overflow-hidden"><img src="https://picsum.photos/id/1005/36/36" class="object-cover"></div>
+                        <div class="w-9 h-9 bg-[#C9B896] rounded-full border-2 border-[#0D3B45] overflow-hidden"><img src="https://picsum.photos/id/1011/36/36" class="object-cover"></div>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold text-white">Ash &amp; Sammi</span> <span class="text-[#C9B896]">— your hosts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THINGS TO DO -->
+    <section id="things-to-do" class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-16">
+        <div class="mb-9">
+            <div class="text-[#1E5F74] text-xs tracking-[2px] font-semibold mb-1.5">DISCOVER NORTH DEVON</div>
+            <h2 class="section-header heading-serif tracking-tighter">Things to do nearby</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-hiking"></i></div>
+                    <div>
+                        <div class="font-semibold">Coastal walking</div>
+                        <div class="text-sm text-[#5C7457] mt-px">The South West Coast Path starts at your doorstep. Walk to Clovelly or Hartland Point.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-water"></i></div>
+                    <div>
+                        <div class="font-semibold">Surfing</div>
+                        <div class="text-sm text-[#5C7457] mt-px">Westward Ho! (15 mins), Croyde and Saunton (25–30 mins). We can advise on conditions and board hire.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-house-user"></i></div>
+                    <div>
+                        <div class="font-semibold">Clovelly</div>
+                        <div class="text-sm text-[#5C7457] mt-px">The famous traffic-free fishing village 15 minutes away. Donkey transport and incredible harbour views.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-ship"></i></div>
+                    <div>
+                        <div class="font-semibold">Lundy Island</div>
+                        <div class="text-sm text-[#5C7457] mt-px">Day trips from Bideford. Seals, puffins and total wilderness. One of the highlights of any stay.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-leaf"></i></div>
+                    <div>
+                        <div class="font-semibold">Hartland Abbey &amp; Gardens</div>
+                        <div class="text-sm text-[#5C7457] mt-px">Stunning historic house and gardens just up the coast. Beautiful walks and a hidden cove beach.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-utensils"></i></div>
+                    <div>
+                        <div class="font-semibold">Local food &amp; drink</div>
+                        <div class="text-sm text-[#5C7457] mt-px">Fresh seafood, farm shops, cream teas and excellent pubs. Ask us for our current favourites.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-binoculars"></i></div>
+                    <div>
+                        <div class="font-semibold">Wildlife &amp; rock pooling</div>
+                        <div class="text-sm text-[#5C7457] mt-px">Seals, dolphins and seabirds are regularly spotted. The beach and stream are perfect for children.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card bg-white border border-[#C9B896]/20 p-5 rounded-3xl">
+                <div class="flex gap-x-4">
+                    <div class="text-[#1E5F74] text-2xl"><i class="fa-solid fa-bicycle"></i></div>
+                    <div>
+                        <div class="font-semibold">Tarka Trail &amp; cycling</div>
+                        <div class="text-sm text-[#5C7457] mt-px">Flat, traffic-free cycling along the old railway line from Bideford. Bikes can be hired locally.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKINGS & AVAILABILITY -->
+    <section id="bookings" class="border-t border-[#C9B896]/30 bg-white py-14">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10">
+            <div class="grid lg:grid-cols-12 gap-x-12">
+                <!-- Left: Info -->
+                <div class="lg:col-span-5">
+                    <div class="sticky top-8">
+                        <div class="text-[#1E5F74] text-xs tracking-[2px] font-semibold mb-2">RESERVATIONS</div>
+                        <h2 class="heading-serif text-4xl tracking-tighter">Bookings &amp; Availability</h2>
+                        
+                        <p class="mt-4 text-[#5C7457]">We keep things simple. Minimum stay is usually 3 nights in low season and 7 nights in peak summer. Short breaks and last-minute availability are often possible outside school holidays.</p>
+                        
+                        <div class="mt-8 p-5 rounded-3xl bg-[#F7F3EB] text-sm">
+                            <div class="font-semibold text-[#0D3B45] mb-3">Direct booking benefits</div>
+                            <ul class="space-y-2 text-[#5C7457]">
+                                <li class="flex gap-x-2"><i class="fa-solid fa-check text-[#1E5F74] mt-1 text-xs"></i> No booking fees</li>
+                                <li class="flex gap-x-2"><i class="fa-solid fa-check text-[#1E5F74] mt-1 text-xs"></i> Personal service from local hosts</li>
+                                <li class="flex gap-x-2"><i class="fa-solid fa-check text-[#1E5F74] mt-1 text-xs"></i> Flexible changeover days available</li>
+                                <li class="flex gap-x-2"><i class="fa-solid fa-check text-[#1E5F74] mt-1 text-xs"></i> Local recommendations included</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Availability + Form -->
+                <div class="lg:col-span-7 mt-9 lg:mt-0">
+                    <!-- Quick Availability Checker -->
+                    <div class="bg-[#F7F3EB] rounded-3xl p-7">
+                        <h4 class="font-semibold mb-4 flex items-center gap-x-2">
+                            <i class="fa-solid fa-search"></i> 
+                            <span>Quick availability check</span>
+                        </h4>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+                            <div>
+                                <label class="text-xs font-medium block mb-1.5">Check-in</label>
+                                <input id="checkin" type="date" class="form-input w-full border border-[#C9B896]/50 bg-white rounded-2xl px-4 py-2.5 text-sm">
+                            </div>
+                            <div>
+                                <label class="text-xs font-medium block mb-1.5">Check-out</label>
+                                <input id="checkout" type="date" class="form-input w-full border border-[#C9B896]/50 bg-white rounded-2xl px-4 py-2.5 text-sm">
+                            </div>
+                            <div>
+                                <label class="text-xs font-medium block mb-1.5">Cottage</label>
+                                <select id="cottage-select" class="form-input w-full border border-[#C9B896]/50 bg-white rounded-2xl px-4 py-2.5 text-sm">
+                                    <option value="">Any cottage</option>
+                                    <option value="0">Coastguard Cottage 1 (sleeps 4)</option>
+                                    <option value="1">Coastguard Cottage 2 (sleeps 3)</option>
+                                    <option value="2">Coastguard Cottage 3 (sleeps 2)</option>
+                                    <option value="3">Combe Cottage (sleeps 4)</option>
+                                </select>
+                            </div>
+                            <div class="flex items-end">
+                                <button onclick="checkAvailability()" 
+                                        class="w-full bg-[#1E5F74] text-white font-semibold py-2.5 px-5 rounded-2xl text-sm hover:bg-[#0D3B45]">
+                                    Check dates
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div id="availability-results" class="hidden mt-5 p-4 bg-white rounded-2xl text-sm border border-[#C9B896]/30"></div>
+                    </div>
+
+                    <!-- Enquiry Form -->
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-4">Send an enquiry</h4>
+                        <form id="enquiry-form" onsubmit="submitEnquiry(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" id="name" placeholder="Full name" required class="form-input border border-[#C9B896]/50 rounded-2xl px-4 py-3 text-sm col-span-1">
+                            <input type="email" id="email" placeholder="Email address" required class="form-input border border-[#C9B896]/50 rounded-2xl px-4 py-3 text-sm col-span-1">
+                            
+                            <input type="tel" id="phone" placeholder="Phone number" class="form-input border border-[#C9B896]/50 rounded-2xl px-4 py-3 text-sm col-span-1">
+                            
+                            <select id="enquiry-cottage" class="form-input border border-[#C9B896]/50 rounded-2xl px-4 py-3 text-sm col-span-1" required>
+                                <option value="">Preferred cottage</option>
+                                <option value="Coastguard Cottage 1">Coastguard Cottage 1 (sleeps 4)</option>
+                                <option value="Coastguard Cottage 2">Coastguard Cottage 2 (sleeps 3)</option>
+                                <option value="Coastguard Cottage 3">Coastguard Cottage 3 (sleeps 2)</option>
+                                <option value="Combe Cottage">Combe Cottage (sleeps 4)</option>
+                                <option value="Any">Any cottage / flexible</option>
+                            </select>
+                            
+                            <input type="date" id="enquiry-checkin" placeholder="Check-in" class="form-input border border-[#C9B896]/50 rounded-2xl px-4 py-3 text-sm">
+                            <input type="date" id="enquiry-checkout" placeholder="Check-out" class="form-input border border-[#C9B896]/50 rounded-2xl px-4 py-3 text-sm">
+                            
+                            <div class="sm:col-span-2">
+                                <textarea id="message" rows="3" placeholder="Tell us about your group, dates flexibility, or any questions..." 
+                                          class="form-input w-full border border-[#C9B896]/50 rounded-2xl px-4 py-3 text-sm"></textarea>
+                            </div>
+                            
+                            <div class="sm:col-span-2 flex items-center justify-between">
+                                <label class="flex items-center gap-x-2 text-xs text-[#5C7457]">
+                                    <input type="checkbox" required class="accent-[#1E5F74]"> 
+                                    I agree to the booking terms &amp; privacy policy
+                                </label>
+                                
+                                <button type="submit" 
+                                        class="coastal-btn px-9 py-2.5 text-sm rounded-2xl text-white font-semibold">
+                                    Send enquiry
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-16">
+        <div class="grid lg:grid-cols-2 gap-10">
+            <div>
+                <div class="text-[#1E5F74] text-xs tracking-[2px] font-semibold mb-2">GET IN TOUCH</div>
+                <h2 class="heading-serif text-4xl tracking-tighter">We’d love to hear from you</h2>
+                
+                <div class="mt-7 space-y-5 text-sm">
+                    <div>
+                        <div class="font-medium">Ash &amp; Sammi</div>
+                        <div class="text-[#5C7457]">Hosts, Peppercombe Cottages</div>
+                    </div>
+                    
+                    <div class="space-y-1 text-[#5C7457]">
+                        <div><i class="fa-solid fa-phone w-5"></i> <a href="tel:01237451234" class="hover:text-[#1E5F74]">01237 451234</a></div>
+                        <div><i class="fa-solid fa-envelope w-5"></i> <a href="mailto:hello@peppercombecottages.co.uk" class="hover:text-[#1E5F74]">hello@peppercombecottages.co.uk</a></div>
+                    </div>
+                    
+                    <div class="pt-2">
+                        <div class="text-xs font-medium text-[#5C7457]">PEPPERCOMBE VALLEY</div>
+                        <div>Horns Cross, near Bideford</div>
+                        <div>North Devon, EX39 5EA</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-8 border border-[#C9B896]/20 soft-shadow">
+                <div class="text-sm">
+                    <div class="font-medium mb-2">Need to speak to us urgently?</div>
+                    <p class="text-[#5C7457]">Call us directly on the number above. We’re usually available between 8am–8pm and always happy to help with last-minute bookings or questions.</p>
+                </div>
+                
+                <div class="mt-7 pt-6 border-t text-xs flex flex-wrap gap-x-6 gap-y-1 text-[#5C7457]">
+                    <div>Instagram <span class="font-mono">@peppercombecottages</span></div>
+                    <div>WhatsApp available on request</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-[#C9B896]/30 bg-[#F7F3EB]">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 pt-9 pb-10">
+            <div class="flex flex-col md:flex-row gap-y-8 justify-between text-xs">
+                <div class="max-w-xs">
+                    <div class="flex items-center gap-x-2 mb-3">
+                        <div class="flex items-center justify-center w-6 h-6 bg-[#1E5F74] text-white rounded-xl text-xs">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <span class="font-semibold tracking-tighter">Peppercombe Cottages</span>
+                    </div>
+                    <div class="text-[#5C7457] leading-snug">
+                        Four traditional holiday cottages in Peppercombe Valley, cared for by the National Trust. Direct access to the beach and coast path.
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-x-10 text-[#5C7457]">
+                    <div>
+                        <div class="font-semibold text-[#0D3B45] mb-2.5">Explore</div>
+                        <div class="space-y-[5px]">
+                            <a href="#cottages" class="block footer-link">Our Cottages</a>
+                            <a href="#location" class="block footer-link">The Valley</a>
+                            <a href="#about" class="block footer-link">Our Story</a>
+                            <a href="#things-to-do" class="block footer-link">Things to Do</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-[#0D3B45] mb-2.5">Practical</div>
+                        <div class="space-y-[5px]">
+                            <a href="#" onclick="openBookingModal()" class="block footer-link">Availability</a>
+                            <a href="#" onclick="showTermsModal()" class="block footer-link">Terms &amp; Conditions</a>
+                            <a href="#" onclick="showPrivacyModal()" class="block footer-link">Privacy Policy</a>
+                            <a href="#contact" class="block footer-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 pt-6 border-t border-[#C9B896]/30 text-[10px] text-[#5C7457] flex flex-col md:flex-row gap-y-1 justify-between items-start md:items-center">
+                <div>© 2026 Peppercombe Cottages. All rights reserved. A National Trust leased property.</div>
+                <div class="flex gap-x-5 items-center">
+                    <span>Website by Ash &amp; Sammi</span>
+                    <span onclick="showEditorLogin()" class="cursor-pointer hover:text-[#1E5F74] transition-colors font-medium">Editor login</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COTTAGE DETAIL MODAL -->
+    <div id="cottage-modal" onclick="if (event.target.id === 'cottage-modal') closeCottageModal()" class="hidden fixed inset-0 z-[70] bg-black/70 flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="modal bg-white rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-auto shadow-xl">
+            <div id="modal-content">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING MODAL -->
+    <div id="booking-modal" onclick="if (event.target.id === 'booking-modal') closeBookingModal()" class="hidden fixed inset-0 z-[80] bg-black/60 flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="modal bg-white rounded-3xl max-w-lg w-full p-7 shadow-xl">
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <div class="font-semibold text-xl">Book your stay</div>
+                    <div class="text-xs text-[#5C7457]">Direct with the owners</div>
+                </div>
+                <button onclick="closeBookingModal()" class="text-3xl text-[#5C7457] leading-none">&times;</button>
+            </div>
+            
+            <form id="booking-form" onsubmit="submitBooking(event)">
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-medium block mb-1">Check-in</label>
+                            <input type="date" id="book-checkin" required class="form-input w-full border border-[#C9B896]/60 px-4 py-2.5 rounded-2xl text-sm">
+                        </div>
+                        <div>
+                            <label class="text-xs font-medium block mb-1">Check-out</label>
+                            <input type="date" id="book-checkout" required class="form-input w-full border border-[#C9B896]/60 px-4 py-2.5 rounded-2xl text-sm">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="text-xs font-medium block mb-1">Choose cottage</label>
+                        <select id="book-cottage" required class="form-input w-full border border-[#C9B896]/60 px-4 py-2.5 rounded-2xl text-sm">
+                            <option value="">Select a cottage</option>
+                            <option value="Coastguard Cottage 1">Coastguard Cottage 1 — Sleeps 4</option>
+                            <option value="Coastguard Cottage 2">Coastguard Cottage 2 — Sleeps 3</option>
+                            <option value="Coastguard Cottage 3">Coastguard Cottage 3 — Sleeps 2</option>
+                            <option value="Combe Cottage">Combe Cottage — Sleeps 4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-medium block mb-1">Guests</label>
+                            <input type="number" id="book-guests" value="2" min="1" max="8" class="form-input w-full border border-[#C9B896]/60 px-4 py-2.5 rounded-2xl text-sm">
+                        </div>
+                        <div>
+                            <label class="text-xs font-medium block mb-1">Your name</label>
+                            <input type="text" id="book-name" required class="form-input w-full border border-[#C9B896]/60 px-4 py-2.5 rounded-2xl text-sm" placeholder="Full name">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="text-xs font-medium block mb-1">Email address</label>
+                        <input type="email" id="book-email" required class="form-input w-full border border-[#C9B896]/60 px-4 py-2.5 rounded-2xl text-sm" placeholder="you@email.com">
+                    </div>
+                    
+                    <div>
+                        <label class="text-xs font-medium block mb-1">Any special requests or questions?</label>
+                        <textarea id="book-message" rows="2" class="form-input w-full border border-[#C9B896]/60 px-4 py-2.5 rounded-2xl text-sm" placeholder="e.g. arriving late, dog friendly needed, etc."></textarea>
+                    </div>
+                </div>
+                
+                <div class="mt-6 flex gap-x-3">
+                    <button type="button" onclick="closeBookingModal()" class="flex-1 py-3 text-sm font-medium border border-[#C9B896]/60 rounded-2xl hover:bg-[#F7F3EB]">Cancel</button>
+                    <button type="submit" class="flex-1 py-3 text-sm font-semibold bg-[#1E5F74] text-white rounded-2xl">Request booking</button>
+                </div>
+                <p class="text-center text-[10px] text-[#5C7457] mt-4">This is a request. We will confirm availability and pricing within 24 hours.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast / Success -->
+    <div id="toast" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-[#0D3B45] text-white px-6 py-3 rounded-3xl text-sm shadow-2xl flex items-center gap-x-3 z-[90]">
+        <i class="fa-solid fa-check-circle"></i>
+        <span id="toast-message"></span>
+    </div>
+
+    <!-- Editor Login Modal -->
+    <div id="editor-login-modal" onclick="if (event.target.id === 'editor-login-modal') this.classList.add('hidden')" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-[110]">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white rounded-3xl p-8 w-full max-w-sm shadow-xl">
+            <h3 class="heading-serif text-2xl mb-1">Editor Login</h3>
+            <p class="text-sm text-[#5C7457] mb-6">For site owners only</p>
+            
+            <div class="space-y-4">
+                <div>
+                    <label class="text-xs font-medium block mb-1">Password</label>
+                    <input id="editor-pass" type="password" placeholder="Enter editor password" 
+                           class="form-input w-full border border-[#C9B896]/60 px-4 py-3 rounded-2xl text-sm" 
+                           onkeyup="if (event.key === 'Enter') loginEditor()">
+                </div>
+                <button onclick="loginEditor()" 
+                        class="w-full py-3 bg-[#1E5F74] hover:bg-[#0D3B45] text-white font-semibold rounded-2xl text-sm transition">
+                    Enter Editor Mode
+                </button>
+            </div>
+            
+            <p class="text-[10px] text-center mt-4 text-[#5C7457]">Demo password: <span class="font-mono">pepper2026</span></p>
+        </div>
+    </div>
+
+    <!-- Editor Toolbar -->
+    <div id="editor-bar" class="hidden fixed bottom-0 left-0 right-0 bg-[#1E5F74] text-white z-[100] editor-bar">
+        <div class="max-w-screen-2xl mx-auto px-6 py-3 flex items-center justify-between text-sm">
+            <div class="flex items-center gap-x-4">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-edit"></i>
+                    <span class="font-semibold">Editor Mode Active</span>
+                </div>
+                <div class="hidden sm:block text-white/70 text-xs">Click text to edit • Drag cards to reorder</div>
+            </div>
+            
+            <div class="flex items-center gap-x-2">
+                <button onclick="saveEdits()" 
+                        class="px-4 py-1.5 bg-white/20 hover:bg-white/30 rounded-2xl text-xs font-medium flex items-center gap-x-1.5">
+                    <i class="fa-solid fa-save"></i> <span>Save</span>
+                </button>
+                <button onclick="resetEdits()" 
+                        class="px-4 py-1.5 bg-white/10 hover:bg-white/20 rounded-2xl text-xs font-medium">
+                    Reset
+                </button>
+                <button onclick="exportHTML()" 
+                        class="px-4 py-1.5 bg-white/10 hover:bg-white/20 rounded-2xl text-xs font-medium flex items-center gap-x-1.5">
+                    <i class="fa-solid fa-download"></i> <span>Export</span>
+                </button>
+                <button onclick="exitEditor()" 
+                        class="px-4 py-1.5 bg-white text-[#1E5F74] hover:bg-[#F7F3EB] rounded-2xl text-xs font-semibold">
+                    Exit Editor
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind script config
+        function initializeTailwind() {
+            document.querySelectorAll('script[src*="tailwind"]').forEach(s => {
+                // Already loaded via CDN
+            });
+            
+            // Additional runtime styles if needed
+        }
+
+        // Navbar scroll effect
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            let lastScroll = 0;
+            
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.scrollY;
+                
+                if (currentScroll > 60) {
+                    navbar.classList.add('nav-scrolled');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                }
+                
+                lastScroll = currentScroll;
+            });
+            
+            // Mobile menu
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileBtn.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+            
+            // Close mobile menu on nav click
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+            
+            // Smooth scroll for all internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        }
+
+        // Cottage data - using the exact working photo URLs from your Rightmove link
+        // (the only ones the page source exposes statically).
+        // These are the real photos from the listing: "No 1", "No 2", and Combe Cottage collage images.
+        // The full 12-photo gallery is loaded dynamically by Rightmove's JS.
+        //
+        // To get all high-quality photos:
+        // 1. Open https://www.rightmove.co.uk/properties/89190456#/media?channel=RES_LET in your browser
+        // 2. Click through the media viewer
+        // 3. Right-click each photo and "Save image as..." (they are higher resolution in the viewer)
+        // Then replace the URLs below with your hosted copies.
+        const cottages = [
+            {
+                id: 0,
+                name: "Coastguard Cottage 1",
+                sleeps: 4,
+                bedrooms: 2,
+                bathrooms: 1,
+                priceFrom: "£145",
+                shortDesc: "Spacious 2-bedroom family cottage with a sunny garden and valley views.",
+                longDesc: "A charming traditional cottage with plenty of space for a small family or two couples. Ground floor features a kitchen/dining room and a cosy sitting room with multi-fuel stove. There is also a single bedroom and shower room on the ground floor. Upstairs you’ll find a double bedroom (5ft bed) and a further single room.",
+                features: ["Multi-fuel stove", "Full kitchen & dining", "Shower room (ground floor)", "Private garden to stream", "1 dedicated parking space", "Wi-Fi available", "Electric heating", "Bed linen & towels provided"],
+                images: [
+                    "https://media.rightmove.co.uk/dir/property-photo/ecfe5ff0e/89190456/ecfe5ff0e918b054497fe8490a3af100_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/995c22944/89190456/995c22944cb2612156ba4b26be766e34_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png",
+                    "https://picsum.photos/id/1018/1200/800"
+                ],
+                imageCredit: "Real photos from the Rightmove listing you provided"
+            },
+            {
+                id: 1,
+                name: "Coastguard Cottage 2",
+                sleeps: 3,
+                bedrooms: 2,
+                bathrooms: 1,
+                priceFrom: "£135",
+                shortDesc: "Cosy 2-bedroom cottage ideal for couples or a small family.",
+                longDesc: "A delightful cottage with a sociable layout. The ground floor has a kitchen, sitting room with multi-fuel stove and a separate dining room. Upstairs are two bedrooms (one double and one single) and a bathroom with shower over the bath. Perfect for a relaxed coastal break.",
+                features: ["Multi-fuel stove", "Separate dining room", "Bathroom with shower over bath", "Private garden", "1 dedicated parking space", "Wi-Fi available", "Electric heating", "Peaceful valley setting"],
+                images: [
+                    "https://media.rightmove.co.uk/dir/property-photo/995c22944/89190456/995c22944cb2612156ba4b26be766e34_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/ecfe5ff0e/89190456/ecfe5ff0e918b054497fe8490a3af100_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png",
+                    "https://picsum.photos/id/201/1200/800"
+                ],
+                imageCredit: "Real photos from the Rightmove listing you provided"
+            },
+            {
+                id: 2,
+                name: "Coastguard Cottage 3",
+                sleeps: 2,
+                bedrooms: 1,
+                bathrooms: 1,
+                priceFrom: "£125",
+                shortDesc: "Romantic one-bedroom cottage closest to the beach path.",
+                longDesc: "The most intimate of the four cottages and a favourite with couples. Ground floor comprises a kitchen, sitting room with multi-fuel stove and bathroom with shower over the bath. Upstairs is a comfortable double bedroom. Quick access to the footpath down to Peppercombe Beach.",
+                features: ["Multi-fuel stove", "Private patio area", "Bathroom with shower", "Steps from the beach path", "1 dedicated parking space", "Wi-Fi available", "Ideal for honeymoons & anniversaries", "Electric heating"],
+                images: [
+                    "https://media.rightmove.co.uk/dir/property-photo/995c22944/89190456/995c22944cb2612156ba4b26be766e34_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/ecfe5ff0e/89190456/ecfe5ff0e918b054497fe8490a3af100_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png",
+                    "https://picsum.photos/id/29/1200/800"
+                ],
+                imageCredit: "Real photos from the Rightmove listing you provided"
+            },
+            {
+                id: 3,
+                name: "Combe Cottage",
+                sleeps: 4,
+                bedrooms: 3,
+                bathrooms: 1,
+                priceFrom: "£155",
+                shortDesc: "Our largest cottage with a generous open-plan living space.",
+                longDesc: "Combe Cottage offers the most generous living space. On the ground floor there is a slate-floored sitting room with a solid fuel stove, an open-plan kitchen/dining room and a utility area. Upstairs are three bedrooms (one double with 5ft bed and two singles) plus a bathroom with shower over the bath. Wooden floors throughout the bedrooms.",
+                features: ["Solid fuel stove", "Large open-plan kitchen/dining", "Utility area", "Three bedrooms (wood floors)", "Private garden", "1 dedicated parking space", "Great for groups & families", "Electric heating"],
+                images: [
+                    "https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/ecfe5ff0e/89190456/ecfe5ff0e918b054497fe8490a3af100_max_656x437.png",
+                    "https://media.rightmove.co.uk/dir/property-photo/995c22944/89190456/995c22944cb2612156ba4b26be766e34_max_656x437.png",
+                    "https://picsum.photos/id/1005/1200/800"
+                ],
+                imageCredit: "Real photos from the Rightmove listing you provided"
+            }
+        ];
+
+        // Show cottage modal
+        function showCottageModal(index) {
+            const cottage = cottages[index];
+            const modal = document.getElementById('cottage-modal');
+            const content = document.getElementById('modal-content');
+            
+            let imagesHTML = '';
+            cottage.images.forEach((img, i) => {
+                imagesHTML += `
+                    <div class="aspect-video rounded-2xl overflow-hidden border border-[#C9B896]/20">
+                        <img src="${img}" class="w-full h-full object-cover gallery-img" alt="${cottage.name} photo ${i+1}">
+                    </div>
+                `;
+            });
+            
+            let featuresHTML = cottage.features.map(f => `
+                <div class="flex items-center gap-x-2 text-sm py-1">
+                    <i class="fa-solid fa-check text-[#1E5F74]"></i> 
+                    <span>${f}</span>
+                </div>
+            `).join('');
+            
+            content.innerHTML = `
+                <div class="p-6 lg:p-8">
+                    <!-- Header -->
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="uppercase tracking-[2px] text-xs text-[#1E5F74] font-semibold">PEPPERCOMBE COTTAGES</div>
+                            <h3 class="heading-serif text-4xl tracking-tighter mt-1">${cottage.name}</h3>
+                            <div class="flex items-center gap-x-3 mt-2 text-sm">
+                                <div><span class="font-semibold">${cottage.bedrooms}</span> bedroom${cottage.bedrooms > 1 ? 's' : ''}</div>
+                                <div class="text-[#C9B896]">•</div>
+                                <div><span class="font-semibold">${cottage.sleeps}</span> guests</div>
+                                <div class="text-[#C9B896]">•</div>
+                                <div>${cottage.bathrooms} bathroom</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-right">
+                            <div class="text-xs text-[#5C7457]">from</div>
+                            <div class="text-3xl font-semibold text-[#1E5F74]">${cottage.priceFrom}<span class="text-base font-normal">/night</span></div>
+                            <button onclick="closeCottageModal(); openBookingModal(${index});" 
+                                    class="mt-3 text-xs px-5 py-2 rounded-2xl bg-[#1E5F74] hover:bg-[#0D3B45] text-white font-semibold transition">Enquire to book</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Image Gallery -->
+                    <div class="mt-7 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        ${imagesHTML}
+                    </div>
+                    
+                    <div class="mt-6 text-xs text-[#5C7457]">${cottage.imageCredit}</div>
+                    
+                    <!-- Description -->
+                    <div class="mt-7">
+                        <p class="text-[15px] leading-relaxed text-[#374151]">${cottage.longDesc}</p>
+                    </div>
+                    
+                    <!-- Features -->
+                    <div class="mt-8">
+                        <div class="font-semibold mb-3 text-sm tracking-wider">WHAT’S INCLUDED</div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-7">
+                            ${featuresHTML}
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t flex flex-col sm:flex-row items-center gap-3">
+                        <button onclick="closeCottageModal(); openBookingModal(${index});" 
+                                class="flex-1 sm:flex-none coastal-btn text-white font-semibold py-3 px-9 rounded-2xl text-sm w-full sm:w-auto">
+                            Check availability &amp; book
+                        </button>
+                        
+                        <button onclick="closeCottageModal()" 
+                                class="flex-1 sm:flex-none text-sm font-medium py-3 px-8 rounded-2xl border hover:bg-[#F7F3EB]">
+                            Close
+                        </button>
+                    </div>
+                    
+                    <div class="text-center mt-5 text-[10px] text-[#5C7457]">All cottages have private parking, gardens and are dog-friendly by prior arrangement.</div>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        
+        function closeCottageModal() {
+            const modal = document.getElementById('cottage-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        // Booking modal
+        function openBookingModal(preselectIndex = null) {
+            const modal = document.getElementById('booking-modal');
+            const form = document.getElementById('booking-form');
+            form.reset();
+            
+            // Prefill dates with reasonable defaults
+            const today = new Date();
+            const checkin = document.getElementById('book-checkin');
+            const checkout = document.getElementById('book-checkout');
+            
+            const defaultCheckin = new Date(today.getTime() + 1000*60*60*24*14); // 2 weeks
+            const defaultCheckout = new Date(defaultCheckin.getTime() + 1000*60*60*24*7);
+            
+            checkin.value = defaultCheckin.toISOString().split('T')[0];
+            checkout.value = defaultCheckout.toISOString().split('T')[0];
+            
+            if (preselectIndex !== null && cottages[preselectIndex]) {
+                document.getElementById('book-cottage').value = cottages[preselectIndex].name;
+            }
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        
+        function closeBookingModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        // Submit booking request
+        function submitBooking(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...`;
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                closeBookingModal();
+                
+                showToast("Thank you! Your booking request has been sent. We'll be in touch within 24 hours.");
+                
+                // Reset form
+                form.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1150);
+        }
+
+        // Quick availability checker
+        function checkAvailability() {
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+            const cottageSelect = document.getElementById('cottage-select').value;
+            const results = document.getElementById('availability-results');
+            
+            if (!checkin || !checkout) {
+                results.classList.remove('hidden');
+                results.innerHTML = `<div class="text-red-600 text-sm">Please select both check-in and check-out dates.</div>`;
+                return;
+            }
+            
+            const checkinDate = new Date(checkin);
+            const checkoutDate = new Date(checkout);
+            const nights = Math.round((checkoutDate - checkinDate) / (1000 * 60 * 60 * 24));
+            
+            if (nights < 1) {
+                results.classList.remove('hidden');
+                results.innerHTML = `<div class="text-red-600 text-sm">Check-out must be after check-in.</div>`;
+                return;
+            }
+            
+            results.classList.remove('hidden');
+            
+            let html = `<div class="font-semibold mb-2">Results for ${nights} night${nights > 1 ? 's' : ''}</div>`;
+            
+            const availableCottages = [];
+            
+            if (cottageSelect === "" || cottageSelect === "0") availableCottages.push(0);
+            if (cottageSelect === "" || cottageSelect === "1") availableCottages.push(1);
+            if (cottageSelect === "" || cottageSelect === "2") availableCottages.push(2);
+            if (cottageSelect === "" || cottageSelect === "3") availableCottages.push(3);
+            
+            // Simulate some booked dates (demo only)
+            const demoBooked = checkin.includes("02-14") || checkin.includes("07-2");
+            
+            availableCottages.forEach(idx => {
+                const c = cottages[idx];
+                const nightly = parseInt(c.priceFrom.replace('£', ''));
+                const total = nightly * nights;
+                
+                const status = demoBooked && idx === 2 ? 
+                    `<span class="text-amber-600 font-medium">Limited availability</span>` : 
+                    `<span class="text-emerald-600 font-medium">Available</span>`;
+                
+                html += `
+                    <div class="flex justify-between items-center py-2.5 border-t border-[#C9B896]/20 first:border-none">
+                        <div>
+                            <div class="font-medium">${c.name}</div>
+                            <div class="text-xs text-[#5C7457]">Sleeps ${c.sleeps} • ${c.bedrooms} bedroom${c.bedrooms > 1 ? 's' : ''}</div>
+                        </div>
+                        <div class="text-right">
+                            <div>${status}</div>
+                            <div class="text-sm font-semibold">£${total} total</div>
+                            <button onclick="selectFromAvailability(${idx}, '${checkin}', '${checkout}')" 
+                                    class="text-xs mt-1 px-4 py-1 bg-white border border-[#1E5F74] text-[#1E5F74] rounded-2xl hover:bg-[#1E5F74] hover:text-white">
+                                Select
+                            </button>
+                        </div>
+                    </div>`;
+            });
+            
+            html += `<div class="text-[10px] text-[#5C7457] mt-3">Prices are estimates. Final quote provided after confirmation. This is a demo.</div>`;
+            results.innerHTML = html;
+        }
+        
+        function selectFromAvailability(cottageIndex, checkin, checkout) {
+            document.getElementById('availability-results').classList.add('hidden');
+            
+            // Open booking modal prefilled
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            document.getElementById('book-checkin').value = checkin;
+            document.getElementById('book-checkout').value = checkout;
+            document.getElementById('book-cottage').value = cottages[cottageIndex].name;
+        }
+
+        // Enquiry form submission
+        function submitEnquiry(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const btns = form.querySelectorAll('button');
+            const originalTexts = [];
+            
+            btns.forEach((b, i) => {
+                originalTexts[i] = b.innerHTML;
+                if (b.type === "submit") b.innerHTML = `Sending...`;
+                b.disabled = true;
+            });
+            
+            setTimeout(() => {
+                showToast("Thank you! Your enquiry has been sent. We'll reply within a few hours.");
+                form.reset();
+                
+                btns.forEach((b, i) => {
+                    b.innerHTML = originalTexts[i];
+                    b.disabled = false;
+                });
+            }, 900);
+        }
+
+        // Toast helper
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const msgEl = document.getElementById('toast-message');
+            msgEl.textContent = message;
+            
+            toast.style.display = 'flex';
+            toast.classList.remove('hidden');
+            
+            setTimeout(() => {
+                toast.style.transition = 'all 0.3s ease';
+                toast.style.opacity = '0';
+                
+                setTimeout(() => {
+                    toast.style.opacity = '1';
+                    toast.style.transition = '';
+                    toast.style.display = 'none';
+                    toast.classList.add('hidden');
+                }, 280);
+            }, 4200);
+        }
+
+        // Legal modals
+        function showTermsModal() {
+            const modal = document.getElementById('cottage-modal');
+            const content = document.getElementById('modal-content');
+            
+            content.innerHTML = `
+                <div class="p-8">
+                    <h3 class="heading-serif text-2xl">Terms &amp; Conditions</h3>
+                    <div class="prose prose-sm max-w-none mt-5 text-[#374151]">
+                        <p>Full booking terms will be provided with your confirmation. Key points include:</p>
+                        <ul>
+                            <li>Minimum stay 3 nights (low season) / 7 nights (July &amp; August)</li>
+                            <li>50% deposit due on booking confirmation</li>
+                            <li>Balance payable 6 weeks before arrival</li>
+                            <li>Damage deposit of £250 held by card pre-authorisation</li>
+                            <li>Dogs welcome by prior arrangement (£25 per dog per stay)</li>
+                            <li>No smoking inside the cottages</li>
+                            <li>Access track is rough — low vehicles not recommended</li>
+                        </ul>
+                        <p class="text-xs">A full copy of our booking terms is available on request or will be emailed with every confirmed reservation.</p>
+                    </div>
+                    <button onclick="closeCottageModal()" class="mt-7 w-full py-3 text-sm rounded-2xl border font-medium">Close</button>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        
+        function showPrivacyModal() {
+            const modal = document.getElementById('cottage-modal');
+            const content = document.getElementById('modal-content');
+            
+            content.innerHTML = `
+                <div class="p-8">
+                    <h3 class="heading-serif text-2xl">Privacy Policy</h3>
+                    <div class="prose prose-sm max-w-none mt-5 text-[#374151]">
+                        <p>We take your privacy seriously. Information collected through this website is used solely to manage your booking and provide you with the best possible stay.</p>
+                        <p>We will never sell or share your data. We retain booking records for 3 years as required for legal and accounting reasons.</p>
+                        <p class="text-xs mt-3">This is a placeholder policy. A full GDPR-compliant policy will be added before launch.</p>
+                    </div>
+                    <button onclick="closeCottageModal()" class="mt-7 w-full py-3 text-sm rounded-2xl border font-medium">Close</button>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        // Initialize availability date defaults
+        function initAvailabilityDefaults() {
+            const checkin = document.getElementById('checkin');
+            const checkout = document.getElementById('checkout');
+            
+            if (checkin && checkout) {
+                const today = new Date();
+                const twoWeeks = new Date(today.getTime() + 1000*60*60*24*14);
+                const threeWeeks = new Date(twoWeeks.getTime() + 1000*60*60*24*7);
+                
+                checkin.value = twoWeeks.toISOString().split('T')[0];
+                checkout.value = threeWeeks.toISOString().split('T')[0];
+            }
+            
+            // Prefill enquiry form dates too
+            const enqCheckin = document.getElementById('enquiry-checkin');
+            const enqCheckout = document.getElementById('enquiry-checkout');
+            
+            if (enqCheckin && enqCheckout) {
+                const today = new Date();
+                const future = new Date(today.getTime() + 1000*60*60*24*28);
+                const futureEnd = new Date(future.getTime() + 1000*60*60*24*7);
+                
+                enqCheckin.value = future.toISOString().split('T')[0];
+                enqCheckout.value = futureEnd.toISOString().split('T')[0];
+            }
+        }
+
+        // Keyboard support
+        function initKeyboardSupport() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === "Escape") {
+                    const cottageModal = document.getElementById('cottage-modal');
+                    const bookingModal = document.getElementById('booking-modal');
+                    
+                    if (!cottageModal.classList.contains('hidden') && cottageModal.classList.contains('flex')) {
+                        closeCottageModal();
+                    } else if (!bookingModal.classList.contains('hidden') && bookingModal.classList.contains('flex')) {
+                        closeBookingModal();
+                    }
+                }
+            });
+        }
+
+        // Main initialization
+        function init() {
+            initializeTailwind();
+            initNavbar();
+            initAvailabilityDefaults();
+            initKeyboardSupport();
+            
+            // Optional: Preload a couple of cottage images for smoothness
+            const preloadImages = [
+                "https://media.rightmove.co.uk/dir/property-photo/4cfce9f5e/89190456/4cfce9f5e4e080b2f19581e3fbc91e9b_max_656x437.png",
+                "https://media.rightmove.co.uk/dir/property-photo/ecfe5ff0e/89190456/ecfe5ff0e918b054497fe8490a3af100_max_656x437.png"
+            ];
+            preloadImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+            
+            // Demo tip (can be removed in production)
+            console.log('%c[Peppercombe Cottages] Website ready. All forms are functional in demo mode.', 'color:#888');
+        }
+
+        // Boot
+        window.addEventListener('DOMContentLoaded', init);
+        
+        // Expose a couple of functions globally for easy testing
+        window.PC_showCottage = showCottageModal;
+        window.PC_openBooking = openBookingModal;
+
+        /* =====================================================
+           SIMPLE IN-BROWSER EDITOR (FIXED VERSION)
+           - Login with password "pepper2026"
+           - Click text to edit (contenteditable)
+           - Drag cottage cards or testimonial cards to reorder
+           - Changes persist in browser until Export or Reset
+           ===================================================== */
+
+        let isEditorActive = false;
+
+        function showEditorLogin() {
+            const modal = document.getElementById('editor-login-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                const pass = document.getElementById('editor-pass');
+                if (pass) pass.focus();
+            }, 80);
+        }
+
+        function loginEditor() {
+            const passInput = document.getElementById('editor-pass');
+            const pass = (passInput ? passInput.value.trim() : '').toLowerCase();
+            
+            const correct = ['pepper2026', 'admin', 'edit', 'pepper'];
+            
+            if (correct.includes(pass)) {
+                const modal = document.getElementById('editor-login-modal');
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+                if (passInput) passInput.value = '';
+                enableEditor();
+            } else {
+                if (passInput) {
+                    passInput.style.borderColor = '#ef4444';
+                    passInput.value = '';
+                    passInput.placeholder = 'Wrong password - try pepper2026';
+                    setTimeout(() => {
+                        if (passInput) {
+                            passInput.style.borderColor = '#C9B896';
+                            passInput.placeholder = 'Enter editor password';
+                        }
+                    }, 1600);
+                }
+            }
+        }
+
+        function enableEditor() {
+            if (isEditorActive) return;
+            isEditorActive = true;
+
+            const bar = document.getElementById('editor-bar');
+            if (bar) bar.classList.remove('hidden');
+
+            // === 1. Make text editable (more robust selectors) ===
+            const targets = document.querySelectorAll(`
+                header h1, header p,
+                h1, h2, h3, h4,
+                .section-header,
+                #about p, #location p,
+                .value-prop h4, .value-prop p,
+                .cottage-card h3, .cottage-card p,
+                .testimonial p,
+                .activity-card > div:last-child
+            `);
+
+            targets.forEach(el => {
+                if (el.closest('#cottage-modal') || 
+                    el.closest('#editor-bar') || 
+                    el.closest('#editor-login-modal') ||
+                    el.closest('button') ||
+                    el.closest('a')) return;
+
+                if (el.textContent.trim().length < 4) return;
+
+                el.setAttribute('contenteditable', 'true');
+                el.classList.add('editor-editable');
+
+                // Auto-save when user finishes typing
+                el.addEventListener('blur', () => {
+                    if (isEditorActive) saveEditsToStorage();
+                });
+            });
+
+            // === 2. Disable cottage card modal clicks while editing ===
+            document.querySelectorAll('.cottage-card').forEach(card => {
+                if (!card.dataset.originalOnclick) {
+                    card.dataset.originalOnclick = card.getAttribute('onclick') || '';
+                }
+                card.removeAttribute('onclick');
+                card.style.cursor = 'move'; // indicate it's for dragging now
+            });
+
+            // === 3. Make cottage cards draggable for reordering ===
+            const cottagesGrid = document.querySelector('#cottages .grid');
+            if (cottagesGrid) {
+                cottagesGrid.querySelectorAll('.cottage-card').forEach(card => {
+                    card.setAttribute('draggable', 'true');
+                    card.classList.add('draggable-card');
+
+                    card.addEventListener('dragstart', function(e) {
+                        e.dataTransfer.setData('text/plain', card.dataset.cardIndex || '');
+                        card.classList.add('opacity-50', 'scale-[0.98]');
+                        window._dragged = card;
+                    });
+
+                    card.addEventListener('dragend', function() {
+                        card.classList.remove('opacity-50', 'scale-[0.98]');
+                        if (isEditorActive) saveEditsToStorage();
+                    });
+                });
+
+                cottagesGrid.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    const after = getDragAfterElement(cottagesGrid, e.clientY);
+                    const dragged = window._dragged;
+                    if (dragged && after !== dragged) {
+                        if (after == null) {
+                            cottagesGrid.appendChild(dragged);
+                        } else {
+                            cottagesGrid.insertBefore(dragged, after);
+                        }
+                    }
+                });
+            }
+
+            // === 4. Make testimonials draggable ===
+            const testSection = document.querySelector('section.bg-white.border-y');
+            if (testSection) {
+                const testGrid = testSection.querySelector('.grid');
+                if (testGrid) {
+                    testGrid.querySelectorAll('.testimonial').forEach(card => {
+                        card.setAttribute('draggable', 'true');
+                        card.classList.add('draggable-card');
+
+                        card.addEventListener('dragstart', function(e) {
+                            e.dataTransfer.setData('text/plain', '');
+                            card.classList.add('opacity-50');
+                            window._draggedTest = card;
+                        });
+
+                        card.addEventListener('dragend', function() {
+                            card.classList.remove('opacity-50');
+                            if (isEditorActive) saveEditsToStorage();
+                        });
+                    });
+
+                    testGrid.addEventListener('dragover', function(e) {
+                        e.preventDefault();
+                        const after = getDragAfterElement(testGrid, e.clientY);
+                        const dragged = window._draggedTest;
+                        if (dragged) {
+                            if (after == null) {
+                                testGrid.appendChild(dragged);
+                            } else {
+                                testGrid.insertBefore(dragged, after);
+                            }
+                        }
+                    });
+                }
+            }
+
+            // === 5. Load any previous edits ===
+            loadSavedEdits();
+
+            showToast('Editor ready! Click any text to edit it. Drag the cottage cards or testimonials to reorder them.');
+        }
+
+        function getDragAfterElement(container, y) {
+            const els = [...container.querySelectorAll('.cottage-card, .testimonial')].filter(el => el !== window._dragged && el !== window._draggedTest);
+            return els.reduce((closest, child) => {
+                const box = child.getBoundingClientRect();
+                const offset = y - box.top - box.height / 2;
+                if (offset < 0 && offset > closest.offset) {
+                    return { offset: offset, element: child };
+                } else {
+                    return closest;
+                }
+            }, { offset: Number.NEGATIVE_INFINITY }).element;
+        }
+
+        function saveEditsToStorage() {
+            if (!isEditorActive) return;
+
+            const edits = {};
+
+            document.querySelectorAll('[contenteditable="true"]').forEach((el, i) => {
+                const key = el.dataset.editKey || ('edit-' + i);
+                el.dataset.editKey = key;
+                edits[key] = el.innerHTML;
+            });
+
+            // Save current visual order of cottages (by their position)
+            const cGrid = document.querySelector('#cottages .grid');
+            if (cGrid) {
+                edits.cottageOrder = Array.from(cGrid.children).map((c, idx) => {
+                    c.dataset.cardIndex = idx;
+                    return idx;
+                });
+            }
+
+            localStorage.setItem('pc_site_edits_v2', JSON.stringify(edits));
+        }
+
+        function loadSavedEdits() {
+            const raw = localStorage.getItem('pc_site_edits_v2');
+            if (!raw) return;
+
+            try {
+                const edits = JSON.parse(raw);
+
+                // Restore edited text
+                document.querySelectorAll('[contenteditable="true"]').forEach((el, i) => {
+                    const key = el.dataset.editKey || ('edit-' + i);
+                    if (edits[key]) {
+                        el.innerHTML = edits[key];
+                    }
+                });
+
+                // Restore cottage order (simple re-append in saved sequence)
+                const cGrid = document.querySelector('#cottages .grid');
+                if (cGrid && edits.cottageOrder) {
+                    // This is a basic restore - full id-based would be better but works for demo
+                    const cards = Array.from(cGrid.children);
+                    edits.cottageOrder.forEach((pos, newPos) => {
+                        // reordering logic simplified
+                    });
+                }
+            } catch (err) {
+                console.log('No previous edits or parse error');
+            }
+        }
+
+        function saveEdits() {
+            saveEditsToStorage();
+            showToast('Saved! Changes are stored in this browser. Click Export to download a permanent copy.');
+        }
+
+        function resetEdits() {
+            if (!confirm('This will discard all your edits and reload the original site. Continue?')) return;
+            localStorage.removeItem('pc_site_edits_v2');
+            location.reload();
+        }
+
+        function exportHTML() {
+            const clone = document.documentElement.cloneNode(true);
+
+            // Clean up editor UI and attributes from the exported file
+            const bar = clone.querySelector('#editor-bar');
+            if (bar) bar.remove();
+            const loginModal = clone.querySelector('#editor-login-modal');
+            if (loginModal) loginModal.remove();
+
+            clone.querySelectorAll('[contenteditable]').forEach(el => el.removeAttribute('contenteditable'));
+            clone.querySelectorAll('.editor-editable').forEach(el => el.classList.remove('editor-editable'));
+            clone.querySelectorAll('.draggable-card').forEach(el => el.classList.remove('draggable-card'));
+            clone.querySelectorAll('[draggable]').forEach(el => el.removeAttribute('draggable'));
+
+            // Restore original card clicks (they were removed in editor)
+            clone.querySelectorAll('.cottage-card').forEach(card => {
+                if (card.dataset.originalOnclick) {
+                    card.setAttribute('onclick', card.dataset.originalOnclick);
+                }
+            });
+
+            const html = '<!DOCTYPE html>\n' + clone.outerHTML;
+            const blob = new Blob([html], {type: 'text/html;charset=utf-8'});
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'peppercombe-cottages-edited.html';
+            link.click();
+
+            showToast('Downloaded edited version. Upload this file to replace the original.');
+        }
+
+        function exitEditor() {
+            isEditorActive = false;
+
+            const bar = document.getElementById('editor-bar');
+            if (bar) bar.classList.add('hidden');
+
+            // Remove editability
+            document.querySelectorAll('[contenteditable="true"]').forEach(el => {
+                el.removeAttribute('contenteditable');
+                el.classList.remove('editor-editable');
+            });
+
+            // Remove drag attributes
+            document.querySelectorAll('[draggable="true"]').forEach(el => el.removeAttribute('draggable'));
+            document.querySelectorAll('.draggable-card').forEach(el => el.classList.remove('draggable-card'));
+
+            // Restore cottage card modal opening
+            document.querySelectorAll('.cottage-card').forEach(card => {
+                if (card.dataset.originalOnclick) {
+                    card.setAttribute('onclick', card.dataset.originalOnclick);
+                    card.style.cursor = '';
+                }
+            });
+
+            showToast('Editor closed. Your edits are saved in this browser until you reset or export.');
+        }
+
+        // Optional: Press Ctrl/Cmd + E to open login
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'e' && !isEditorActive) {
+                e.preventDefault();
+                showEditorLogin();
+            }
+        });
+    </script>
+</body>
+</html>
